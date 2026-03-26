@@ -8,12 +8,19 @@ A browser-based, **Deluxe-style vector shooter**: inertia flight, breaking aster
 
 ## Play
 
+| | |
+| :-- | :-- |
+| **Live (GitHub Pages)** | [**Play on GitHub Pages →**](https://vedjuk.github.io/Vector-Rocks/) |
+| **Local** | See below |
+
+Open the live link or run locally, then press **Space** or **Enter** to start.
+
 ```bash
 npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`), then press **Space** or **Enter** to start.
+Vite prints a URL (usually `http://localhost:5173`).
 
 ---
 
@@ -43,11 +50,13 @@ Open the URL Vite prints (usually `http://localhost:5173`), then press **Space**
 
 ---
 
-## Deploying (e.g. GitHub Pages)
+## Deploying
 
-The output is static: deploy the **`dist/`** folder after `npm run build`.
+**GitHub Pages (this repo):** Pushes to `main` run [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)—`npm ci`, `npm run build`, then publish `dist/`. In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
 
-If the site is served from a **subpath** (e.g. `https://user.github.io/vector-rocks/`), set Vite’s [`base`](https://vite.dev/config/shared-options.html#base) to that path (e.g. `'/vector-rocks/'`) in `vite.config.ts`, rebuild, then publish `dist/`. For a **custom domain** or a **user** GitHub Pages site at the domain root, the default base `/` is usually correct.
+`vite.config.ts` sets [`base`](https://vite.dev/config/shared-options.html#base) to `/Vector-Rocks/` so asset URLs match `https://vedjuk.github.io/Vector-Rocks/`. If you fork or rename the repo, update `base` to `/<your-repo-name>/` (with trailing slash), rebuild, and push.
+
+**Other hosts:** After `npm run build`, upload the contents of **`dist/`** anywhere that serves static files. For a site at the domain root (not a subpath), use `base: '/'`.
 
 ---
 
@@ -67,4 +76,8 @@ src/
 
 ## License
 
-This repository is marked **private** in `package.json`. Add a `LICENSE` file if you open-source the project.
+This project is licensed under the [MIT License](LICENSE).
+
+Permission is hereby granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, subject to the conditions in the license file. **The software is provided “as is,” without warranty of any kind.**
+
+The MIT license applies to **this project’s source code and assets** only. It does not grant any rights in third-party trademarks or in the classic games that inspired this tribute.
