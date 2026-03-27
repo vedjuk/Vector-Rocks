@@ -1,5 +1,12 @@
 # Vector Rocks
 
+[![License: MIT](https://img.shields.io/github/license/vedjuk/Vector-Rocks)](LICENSE)
+[![TypeScript 5.9](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite 8](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![Deploy](https://github.com/vedjuk/Vector-Rocks/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/vedjuk/Vector-Rocks/actions/workflows/deploy-pages.yml)  
+[![Play on Pages](https://img.shields.io/badge/Play-GitHub%20Pages-222?logo=githubpages&logoColor=white)](https://vedjuk.github.io/Vector-Rocks/)
+[![Canvas 2D](https://img.shields.io/badge/Canvas-2D-e34f26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+
 A browser-based, **Deluxe-style vector shooter**: inertia flight, breaking asteroids, shields, hyperspace, hostile saucers, and a high score saved locally. Built with **TypeScript**, **Vite**, and the **Canvas 2D** API—no game engine, small bundle, runs anywhere you can host static files.
 
 **Fan tribute.** Vector Rocks is inspired by classic late-70s / early-80s coin-op vector games. It is **not** affiliated with any rights holder, and it does not use original ROM assets, logos, or sampled audio.
